@@ -1,6 +1,6 @@
 import java.util.Scanner; // We use the Scanner class from java.util to handle user input
 
-public class PrintSquares {
+public class SumSquares {
     public static void main(String[] args) {
 
         // Declare Scanner object
@@ -22,9 +22,10 @@ public class PrintSquares {
         int endNum = in.nextInt();
 
         System.out.println("Sequence of squares from " + startNum + " to " + endNum);
+        int total = 0;
         for (; startNum <= endNum; startNum++) {
-            System.out.print(startNum * startNum + " ");
+            total += startNum * startNum;
         }
-        System.out.println("");
+        System.out.println(total);
     }
 }
